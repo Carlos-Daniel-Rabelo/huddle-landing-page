@@ -1,54 +1,58 @@
-@media (max-width: 400px) {
-
-    body {
+/* =======================
+   MOBILE - até 768px
+========================== */
+@media (max-width: 375px) {
+  body {
+    min-height: 100vh;
     background: url("../images/bg-mobile.svg") no-repeat;
     background-color: var(--cor-primaria);
-    color: #fff;
-    }
+    background-size: contain;
+    
+  }
 
-    .header {
-    margin: 20px;
-    }
+  .header {
+    padding: 0px;
+  }
 
-    .header img {
+  .header img {
     width: 150px;
-    }
-    .container {
+    margin: 25px;
+  }
+
+  .container {
     display: flex;
     flex-direction: column;
-    }
-
-    .section-img {
-    display: flex;
-    justify-content: center;
-    }
-
-    .section-img img {
-    width: 80vw;
-    margin-top: 30px;
-    }
-
-    .section-text {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
     text-align: center;
-    }
+  }
 
-    .section-text h1 {
+  .section-img img {
+    width: 305px;
+    margin: 30px auto 0 auto;
+  }
+
+  .section-text h1 {
     font-size: 2.5rem;
-    }
+    margin: 10px auto 0 auto;
+    width: 275px;
+  }
 
-    .section-text p {
-    margin: 15px 20px 30px 20px;
-    }
+  .section-text p {
+    width: 336px;
+    margin: 15px auto 30px auto;
+    padding: 0 20px;
+    line-height: 25px;
+  }
 
-    .section-text a {
-   align-self: center;
-    }
+  .section-text a {
+    padding: 10px 30px;
+  }
 
-    .menu ul {
-    justify-content: center;
+  .menu {
     margin: 30px;
- }
+    justify-content: center;
+  }
+
+  .menu ul {
+    justify-content: center;
+  }
 }
